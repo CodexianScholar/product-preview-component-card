@@ -1,25 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Preview Card</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="product--card">
-        <div class="product--card-img">
-            <img src="#" alt="Photo of cologne ">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="product-card" id="product-card">
+        <div class="product-card-img">
+          <picture>
+            <source
+              media="(max-width: 600px)"
+              srcset="./images/image-product-mobile.jpg"
+            />
+            <img
+              src="./images/image-product-desktop.jpg"
+              alt="Photo of cologne "
+            />
+          </picture>
         </div>
-        <div class="product--card-info">
-            <p>Perfume</p>
-            <h1>Gabrielle Essence Eau De Parfum</h1>
-            <p> A floral, solar and voluptuous interpretation composed by oliver Polge,
-                Prefumer-Creator for the House of Chanel.
-            </p>
-            <p>$149.99 <span>$169.99</span></p>
-            <button> <img src="./images/icon-cart.svg" alt="Shopping Cart Icon"> Add to Cart</button>
+        <div class="product-card-info">
+          <p class="product-card-category">PERFUME</p>
+          <h1 class="product-card-title">Gabrielle Essence Eau De Parfum</h1>
+          <p class="product-card-description">
+            A floral, solar and voluptuous interpretation composed by oliver
+            Polge, Prefumer-Creator for the House of CHANEL.
+          </p>
+          <div class="item-cost">
+            <p class="product-card-price">$149.99</p>
+            <s aria-label="was $169.99">$169.99</s>
+          </div>
+          <button>
+            <img src="./images/icon-cart.svg" alt="Shopping Cart Icon" /> Add to
+            Cart
+          </button>
         </div>
-    </div>
-</body>
+      </div>
+    </main>
+  </body>
 </html>
